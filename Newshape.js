@@ -2,15 +2,16 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-function padRow() {
 
-}
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+  }
 
 
 padRow()
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i + 1))
+    rows.push((i + 1))
   }
   
   let result = ""
